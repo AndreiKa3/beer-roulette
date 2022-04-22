@@ -34,12 +34,12 @@ export default {
 
   li {
     font-size: 1.35rem;
+    text-align: center;
   }
 
 @media (max-width:1499px){
   li {
     font-size: 1rem;
-    text-align: center;
   }
 }
 
