@@ -2,7 +2,7 @@
   <div>
     <div class="containerBeer">
       <h1>Пивная рулетка</h1>
-      <Cardinfo :elemInfo='getInfoBeerRandom'/>
+      <Cardinfo :elemInfo='getInfoBeerRandom' :isBeerCard='true'/>
       <button class="closing-button" v-on:click="changeBeer">Хочу другое</button>
     </div>
   </div>
@@ -91,10 +91,6 @@ export default {
     width: 80%;
     padding: 10px
   }
-}
-
-@media (max-width:1170px) and (max-height: 600px){
-
 }
 
 </style>

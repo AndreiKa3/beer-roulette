@@ -107,7 +107,8 @@ h1 {
 	color: black;
 	background-color: white;
 	border-radius: 1rem;
-	padding: 0.15rem
+	padding: 0.15rem;
+	text-align: center;
 }
 
 @media (max-width:1499px) {
@@ -129,7 +130,6 @@ h1 {
 
 @media (max-width:1170px){
 	h1 {
-		text-align: center;
 		font-size: 1rem;
 	}
 }

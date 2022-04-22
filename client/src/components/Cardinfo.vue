@@ -1,16 +1,21 @@
 <template>
-  <ul>
+  <ul v-if='isBeerCard && getUserAge < 21'>
+    <h1>Пиво возраст не позволяет, а вот чай - да, можно покрепче)</h1>
+  </ul>
+  <ul v-else>
     <li v-for='(elem, key) in elemInfo' :key='elem.key'><b>{{key}}:</b> {{elem}}</li>
   </ul>
 </template>
 
 <script>
+import {mapGetters} from 'vuex'
 
 export default {
-  props: ['elemInfo'],
+  props: ['elemInfo', 'isBeerCard'],
   mounted(){
     console.log(this.elemInfo);
-  }
+  },
+  computed: mapGetters(['getUserAge']),
 }
 </script>
 
@@ -22,7 +27,7 @@ export default {
     justify-content: center;
     align-items: center;
     width: 95%;
-    height: 60%;
+    height: 57.5%;
     background-color: white;
     border-radius: 1rem;
   }

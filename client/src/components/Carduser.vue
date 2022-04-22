@@ -6,11 +6,11 @@
       <div class='userinfo_recomendedbeer'>
         <div class='userinfo'>
           <h1>Общая информация</h1>
-          <Cardinfo :elemInfo='getInfoUser' />
+          <Cardinfo :elemInfo='getInfoUser' :isBeerCard='false'/>
         </div>
         <div class='recomendedbeer'>
           <h1>Рекомендуем</h1>
-          <Cardinfo :elemInfo='getInfoBeerRecomended' />
+          <Cardinfo :elemInfo='getInfoBeerRecomended' :isBeerCard='true'/>
         </div>
       </div>
     </div>
